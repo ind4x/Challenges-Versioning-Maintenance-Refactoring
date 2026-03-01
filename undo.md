@@ -1,0 +1,2 @@
+- git restore: Modifies the working directory. It discards uncommitted local changes to bring the file back to the state of the last commit.
+- git reset: Modifies the history. It moves the branch pointer (HEAD) to a previous commit, potentially erasing recent history.
