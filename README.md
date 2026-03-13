@@ -1,7 +1,6 @@
 
 # Git Challenges: Versioning & Maintenance
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Fedora](https://img.shields.io/badge/Fedora-51921C?style=for-the-badge&logo=fedora&logoColor=white)
 
 This repository documents my mastery of advanced Git workflows, from conflict resolution to responsible AI integration.
 
