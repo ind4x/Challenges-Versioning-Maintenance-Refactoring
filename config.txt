@@ -1,2 +1,3 @@
 Youssef Fellah
 youssef.fellah@example.com
+auth_timeout=30s
