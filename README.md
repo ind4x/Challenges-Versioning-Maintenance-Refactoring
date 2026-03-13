@@ -17,4 +17,6 @@ This repository documents my mastery of advanced Git workflows, from conflict re
 - `docs/`: Technical documentation on version control principles.
 
 ---
-*Developed on Fedora 43 by Youssef.*
+*Authored by Youssef Fellah.*
+
+*Developed as part of an internship - Broker immobilier.*
