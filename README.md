@@ -18,4 +18,4 @@ This repository documents my mastery of advanced Git workflows, from conflict re
 ---
 *Authored by Youssef Fellah.*
 
-*Developed as part of an internship - Broker immobilier.*
+Developed as part of the 2nd year Engineering Cycle - Mundiapolis University.
