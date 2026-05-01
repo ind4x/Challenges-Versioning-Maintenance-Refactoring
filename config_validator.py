@@ -1,10 +1,12 @@
-import logging
-import logging
 import os
 
 def validate_config(file_path):
+    """
+    Validates the configuration file format.
+    Ensures each non-empty line contains an '=' character.
+    """
     if not os.path.exists(file_path):
-        return "Error: config.txt not found."
+        return f"Error: {file_path} not found."
     
     with open(file_path, 'r') as f:
         lines = f.readlines()
@@ -16,4 +18,5 @@ def validate_config(file_path):
     return "Configuration is valid."
 
 if __name__ == "__main__":
-    print(validate_config("config.txt"))
+    config_file = "config.txt"
+    print(validate_config(config_file))

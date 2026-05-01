@@ -1,6 +1,6 @@
-
 # Git Challenges: Versioning & Maintenance
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Fedora](https://img.shields.io/badge/Fedora-51921C?style=for-the-badge&logo=fedora&logoColor=white)
 
 This repository documents my mastery of advanced Git workflows, from conflict resolution to responsible AI integration.
 
@@ -12,10 +12,9 @@ This repository documents my mastery of advanced Git workflows, from conflict re
 
 ## 🚀 Project Structure
 - `config_validator.py`: Python script for configuration validation (AI-assisted feature).
-- `ai-review.md`: Documentation for AI traceability and manual audit.
-- `docs/`: Technical documentation on version control principles.
+- `docs/`: Technical documentation on version control principles and AI reviews.
 
 ---
-*Authored by Youssef Fellah.*
+*Developed on Fedora 43 by Youssef Fellah.*
 
-Developed as part of the 2nd year Engineering Cycle - Mundiapolis University.
+*Part of the 2nd year Engineering Cycle - Mundiapolis University.*
