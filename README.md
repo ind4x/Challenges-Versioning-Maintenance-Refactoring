@@ -66,29 +66,6 @@ The laboratory demonstrates a professional development lifecycle through control
 ├── LICENSE                # MIT License
 └── README.md              # Project documentation
 ```
-
----
-
-## Deployment & Setup
-
-### Prerequisites
-*   Git 2.40+
-*   Python 3.10+
-
-### Launch Sequence
-1.  **Clone the repository**:
-    ```bash
-    git clone git@github.com:yss-ef/Challenges-Versioning-Maintenance-Refactoring.git
-    ```
-2.  **Explore History**:
-    ```bash
-    git log --graph --oneline --all
-    ```
-3.  **Run Validator**:
-    ```bash
-    python3 config_validator.py
-    ```
-
 ---
 
 *Authored by Youssef Fellah.*
