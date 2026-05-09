@@ -67,6 +67,5 @@ The laboratory demonstrates a professional development lifecycle through control
 └── README.md              # Project documentation
 ```
 
----
-*Authored by Youssef Fellah.*
-*Developed for the Engineering Cycle - Mundiapolis University.*
+Authored by Youssef Fellah.  
+Developed for the Engineering Cycle - Mundiapolis University.
