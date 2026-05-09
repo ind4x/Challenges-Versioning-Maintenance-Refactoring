@@ -66,8 +66,7 @@ The laboratory demonstrates a professional development lifecycle through control
 ├── LICENSE                # MIT License
 └── README.md              # Project documentation
 ```
+
 ---
-
 *Authored by Youssef Fellah.*
-
-*Developed for the 2nd year Engineering Cycle - Mundiapolis University.*
+*Developed for the Engineering Cycle - Mundiapolis University.*
