@@ -1,86 +1,83 @@
-# Git advanced workflows and maintenance laboratory
+# Git Advanced Workflows, Versioning & Maintenance Laboratory
 
-Bottom Line Up Front: This project provides a comprehensive exploration of the
-Git ecosystem, focused on mastering professional version control strategies,
-conflict resolution, and responsible AI integration. It serves as a technical
-deep-dive into advanced Git operations and repository maintenance.
-
-## Project architecture
-
-The laboratory demonstrates a professional development lifecycle through
-controlled branch management:
-
-1.  **Feature tier**: Isolated development using the Feature Branching pattern
-    for new functionalities and documentation.
-2.  **Maintenance tier**: Implementation of Hotfixes and Cherry-picking for
-    critical production-ready patches.
-3.  **Integration tier**: Advanced merge strategies including Rebase and manual
-    Conflict Resolution for diverging codebases.
-4.  **Traceability tier**: Human-in-the-loop AI integration with documented
-    review processes for generated code.
+This repository explores advanced version control engineering within the Git ecosystem:
+branch management topologies, interactive rebasing, three-way merge conflict resolution,
+production hotfix cherry-picking, and human-in-the-loop AI code traceability.
 
 ---
 
-## Technical stack
-
-*   **Version control**: Git (Advanced Workflows)
-*   **Operating system**: Fedora 43
-*   **Scripting**: Python (Configuration Validation)
-*   **Documentation**: Markdown (Technical & AI Review)
-*   **Platform**: GitHub (Collaborative Maintenance)
-
----
-
-## Interface showcase (Git operations)
-
-| Branch Management | Conflict Resolution |
-| --- | --- |
-| <img src="screenshots/proof_c03.png" width="400" alt="Branching Strategy"> | <img src="screenshots/proof_c06.png" width="400" alt="Conflict Handling"> |
-
-| Maintenance Workflow | AI Traceability |
-| --- | --- |
-| <img src="screenshots/proof_c14.png" width="400" alt="Hotfix Deployment"> | <img src="screenshots/proof_c15.png" width="400" alt="AI Review Process"> |
-
----
-
-## Core implementations
-
-### 1. Advanced branching strategies
-*   **Feature isolation**: Strict adherence to branching naming conventions for
-    distinct development tracks.
-*   **Maintenance workflows**: Demonstration of `git cherry-pick` and `git tag`
-    for versioned releases.
-*   **Strategic rebasing**: Maintaining linear history while integrating
-    upstream changes.
-
-### 2. Manual conflict resolution
-*   **Divergence analysis**: Handling complex merge conflicts in critical
-    configuration and documentation files.
-*   **Resolution integrity**: Ensuring structural and functional correctness
-    after manual intervention.
-
-### 3. Responsible AI integration
-*   **AI-assisted development**: Utilizing AI for code generation
-    (`config_validator.py`) with strict traceability.
-*   **Human audit**: Documented manual review process (`ai-review.md`) to
-    distinguish AI suggestions from human logic.
-
----
-
-## Project structure
+## Workflow Architecture
 
 ```text
-├── docs/
-│   ├── ai-review.md       # AI traceability & human-in-the-loop audit
-│   ├── version-control.md # Technical notes on Git principles
-│   ├── undo.md            # Strategies for reversing operations
-│   └── about.md           # Project context and objectives
-├── screenshots/           # Visual proofs of Git operations
-├── config_validator.py    # AI-assisted Python utility
-├── config.txt             # Sample configuration for validation
-├── LICENSE                # MIT License
-└── README.md              # Project documentation
+       Feature Branch (feat/config-parsing)
+       o---o---o
+      /         \  (Interactive Rebase / Squashed Linear Merge)
+main o-----------o-------------------------------o=======> (v1.0.0 Tagged Release)
+      \                                         /
+       \                                       /  (Cherry-Pick Specific Patch)
+        o---o (Hotfix Branch: fix/syntax-error)
 ```
 
-Authored by Youssef Fellah.
-Developed for the Engineering Cycle - Mundiapolis University.
+### Multi-Tier Lifecycle Model
+
+1. **Feature Tier:** Isolated parallel tracks using the Feature Branching pattern for modular additions without disrupting the mainline trunk.
+2. **Maintenance Tier:** Implementation of surgical patches (`git cherry-pick`) and immutable release tagging (`git tag -a v1.0.0`).
+3. **Integration Tier:** Conflict triage utilizing 3-way merge tools and linear history preservation via `git rebase`.
+4. **Traceability Tier:** Human-in-the-loop auditing of AI-assisted code generations (`docs/ai-review.md`) verifying algorithmic correctness and lint compliance.
+
+---
+
+## Core Implementations
+
+### 1. Advanced Branching Strategies
+- **Branch Isolation:** Strict branch naming conventions (`feat/*`, `fix/*`, `chore/*`) maintaining zero contamination between development tracks.
+- **Maintenance Workflows:** Application of cherry-picking to backport single critical commits across diverged version branches.
+- **Strategic Linear Rebasing:** Elimination of superfluous merge bubbles to maintain a legible, bisectable Git history.
+
+### 2. Manual 3-Way Conflict Resolution
+- **Divergence Analysis:** Systematic parsing of Git conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) on conflicting configuration directives.
+- **State Integrity:** Validation that post-merge trees pass AST compilation and syntax validation tests.
+
+### 3. Traceable AI Engineering
+- **Code Provenance:** Explicit separation between human-written logic and AI-suggested helper functions in `config_validator.py`.
+- **Audit Ledger:** Structured markdown reviews documenting prompts, algorithmic choices, and edge-case testing.
+
+---
+
+## Project Structure
+
+```text
+Challenges-Versioning-Maintenance-Refactoring/
+├── README.md                          # Technical specification and workflow overview
+├── config_validator.py                # Python utility validating key-value syntax and bounds
+├── config.txt                         # Benchmark configuration file used for conflict simulations
+├── LICENSE                            # MIT License
+├── screenshots/                       # Visual terminal proofs of Git operational states
+└── docs/                              # In-depth architectural notes
+    ├── ai-review.md                   # AI code generation audit ledger and human verification
+    ├── version-control.md             # Theoretical analysis of Git DAG structures
+    ├── undo.md                        # Disaster recovery: reflog, reset, revert, and checkout
+    └── about.md                       # Academic curriculum context and engineering challenges
+```
+
+---
+
+## Technology Stack
+
+- **Version Control:** Git (Advanced Porcelain & Plumbing Commands)
+- **Scripting & Tooling:** Python 3 (`config_validator.py`)
+- **Documentation:** Markdown (Technical Specifications & Audit Logs)
+- **Operating Environment:** Fedora Linux
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+- **Author:** Youssef Fellah ([ind4x_](https://github.com/ind4x))
+- **Institution:** Mundiapolis University, Engineering Cycle
